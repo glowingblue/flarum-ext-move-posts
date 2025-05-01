@@ -160,6 +160,13 @@ export default class MovePostsModal<T extends MovePostsModalAttrs> extends Modal
           m.redraw();
           window.location.reload();
           app.modal.close();
+
+          app.alerts.show(
+            {
+              type: 'success',
+            },
+            app.translator.trans('sycho-move-posts.forum.alerts.success')
+          );
         }
 
         return response;

@@ -11,6 +11,9 @@ sycho-move-posts:
       move_posts: => sycho-move-posts.ref.move_posts
 
   forum:
+    alerts:
+      success: Posts moved successfully.
+
     badge:
       first_moved_tooltip: Moved
 
