@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace SychO\MovePosts;
+namespace GlowingBlue\MovePosts;
 
 use Flarum\Foundation\AbstractValidator;
 

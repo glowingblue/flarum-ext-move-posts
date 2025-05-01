@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace SychO\MovePosts\Access;
+namespace GlowingBlue\MovePosts\Access;
 
 use Flarum\User\Access\AbstractPolicy;
 use Flarum\User\User;

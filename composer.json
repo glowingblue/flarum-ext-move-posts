@@ -1,5 +1,5 @@
 {
-    "name": "sycho/flarum-move-posts",
+    "name": "glowingblue/move-posts",
     "description": "Move posts from one discussion to another",
     "keywords": [
         "flarum"
@@ -14,8 +14,11 @@
     ],
     "homepage": "https://sycho9.github.io",
     "support": {
-        "issues": "https://github.com/SychO9/flarum-move-posts/issues",
-        "source": "https://github.com/SychO9/flarum-move-posts"
+        "issues": "https://github.com/glowingblue/flarum-ext-move-posts/issues",
+        "source": "https://github.com/glowingblue/flarum-ext-move-posts"
+    },
+    "replace": {
+        "sycho/flarum-move-posts": "*"
     },
     "require": {
         "flarum/core": "^1.3.0",
@@ -33,25 +36,25 @@
     ],
     "autoload": {
         "psr-4": {
-            "SychO\\MovePosts\\": "src/"
+            "GlowingBlue\\MovePosts\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SychO\\MovePosts\\Tests\\": "tests/"
+            "GlowingBlue\\MovePosts\\Tests\\": "tests/"
         }
     },
     "extra": {
         "flarum-extension": {
-            "title": "Move Posts",
-            "category": "",
+            "title": "GB Move Posts",
+            "category": "feature",
             "optional-dependencies": [
                 "flarum/tags"
             ],
             "icon": {
                 "name": "fas fa-exchange-alt",
-                "backgroundColor": "#117187",
-                "color": "#fff"
+                "color": "#fff",
+                "backgroundColor": "#00a7e3"
             }
         },
         "flarum-cli": {

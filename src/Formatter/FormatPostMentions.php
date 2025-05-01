@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace SychO\MovePosts\Formatter;
+namespace GlowingBlue\MovePosts\Formatter;
 
 use Psr\Http\Message\ServerRequestInterface as Request;
 use s9e\TextFormatter\Renderer;

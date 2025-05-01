@@ -1,6 +1,6 @@
 <?php
 
-namespace SychO\MovePosts\tests\integration\api;
+namespace GlowingBlue\MovePosts\tests\integration\api;
 
 use Flarum\Discussion\Discussion;
 use Flarum\Post\CommentPost;
@@ -17,7 +17,7 @@ class MovePostsTest extends TestCase
     {
         parent::setUp();
 
-        $this->extension('sycho-move-posts');
+        $this->extension('glowingblue-move-posts');
 
         $this->prepareDatabase([
             'users' => [

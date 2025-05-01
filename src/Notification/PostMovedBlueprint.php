@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace SychO\MovePosts\Notification;
+namespace GlowingBlue\MovePosts\Notification;
 
 use Flarum\Discussion\Discussion;
 use Flarum\Notification\Blueprint\BlueprintInterface;

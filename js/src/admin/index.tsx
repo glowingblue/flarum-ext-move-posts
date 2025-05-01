@@ -1,12 +1,12 @@
 import extractText from 'flarum/common/utils/extractText';
 
-app.initializers.add('sycho/flarum-move-posts', () => {
+app.initializers.add('glowingblue-move-posts', () => {
   let value =
     app.data.settings['sycho-move-posts.moved_first_post_content'] ||
     extractText(app.translator.trans('sycho-move-posts.lib.discussion.first_post.default_content'));
 
   app.extensionData
-    .for('sycho-move-posts')
+    .for('glowingblue-move-posts')
     .registerSetting(function () {
       return (
         <div className="Form-group">
