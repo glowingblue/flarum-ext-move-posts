@@ -12,7 +12,7 @@ sycho-move-posts:
 
   forum:
     alerts:
-      success: Posts moved successfully.
+      success: Moved successfully
 
     badge:
       first_moved_tooltip: Moved
