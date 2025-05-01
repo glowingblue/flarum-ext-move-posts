@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace SychO\MovePosts\Command;
+namespace GlowingBlue\MovePosts\Command;
 
 use Flarum\Discussion\Discussion;
 use Flarum\Discussion\DiscussionRepository;
@@ -23,12 +23,12 @@ use Illuminate\Database\ConnectionResolverInterface;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use SychO\MovePosts\Event\PostsMoved;
-use SychO\MovePosts\Exception\MoveOldPostToNewerDiscussionException;
-use SychO\MovePosts\Exception\MovePostsFromDifferentDiscussionsException;
-use SychO\MovePosts\MovedDiscussionFirstPostFactory;
-use SychO\MovePosts\MovePostsValidator;
-use SychO\MovePosts\PostMovedPost;
+use GlowingBlue\MovePosts\Event\PostsMoved;
+use GlowingBlue\MovePosts\Exception\MoveOldPostToNewerDiscussionException;
+use GlowingBlue\MovePosts\Exception\MovePostsFromDifferentDiscussionsException;
+use GlowingBlue\MovePosts\MovedDiscussionFirstPostFactory;
+use GlowingBlue\MovePosts\MovePostsValidator;
+use GlowingBlue\MovePosts\PostMovedPost;
 
 class MovePostsHandler
 {

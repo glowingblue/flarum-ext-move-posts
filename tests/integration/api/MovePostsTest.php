@@ -1,6 +1,6 @@
 <?php
 
-namespace SychO\MovePosts\tests\integration\api;
+namespace GlowingBlue\MovePosts\tests\integration\api;
 
 use Flarum\Discussion\Discussion;
 use Flarum\Post\CommentPost;

@@ -1,11 +1,11 @@
 <?php
 
-namespace SychO\MovePosts\Listener;
+namespace GlowingBlue\MovePosts\Listener;
 
 use Flarum\Notification\NotificationSyncer;
 use Flarum\Post\CommentPost;
-use SychO\MovePosts\Event\PostsMoved;
-use SychO\MovePosts\Notification\PostMovedBlueprint;
+use GlowingBlue\MovePosts\Event\PostsMoved;
+use GlowingBlue\MovePosts\Notification\PostMovedBlueprint;
 
 class SendNotificationsWhenPostsAreMoved
 {

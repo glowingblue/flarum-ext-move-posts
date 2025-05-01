@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace SychO\MovePosts\Formatter;
+namespace GlowingBlue\MovePosts\Formatter;
 
 use s9e\TextFormatter\Utils;
 

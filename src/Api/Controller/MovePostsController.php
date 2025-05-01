@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace SychO\MovePosts\Api\Controller;
+namespace GlowingBlue\MovePosts\Api\Controller;
 
 use Flarum\Http\RequestUtil;
 use Illuminate\Contracts\Bus\Dispatcher;
@@ -18,7 +18,7 @@ use Laminas\Diactoros\Response\EmptyResponse;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use SychO\MovePosts\Command\MovePosts;
+use GlowingBlue\MovePosts\Command\MovePosts;
 
 class MovePostsController implements RequestHandlerInterface
 {

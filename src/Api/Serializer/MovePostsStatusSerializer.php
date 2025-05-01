@@ -1,10 +1,10 @@
 <?php
 
-namespace SychO\MovePosts\Api\Serializer;
+namespace GlowingBlue\MovePosts\Api\Serializer;
 
 use Flarum\Api\Serializer\AbstractSerializer;
 use InvalidArgumentException;
-use SychO\MovePosts\Command\MovePosts;
+use GlowingBlue\MovePosts\Command\MovePosts;
 
 class MovePostsStatusSerializer extends AbstractSerializer
 {

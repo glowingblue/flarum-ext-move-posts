@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace SychO\MovePosts\Exception;
+namespace GlowingBlue\MovePosts\Exception;
 
 use Exception;
 use Flarum\Foundation\KnownError;
