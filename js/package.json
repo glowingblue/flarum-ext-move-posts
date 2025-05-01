@@ -1,5 +1,5 @@
 {
-    "name": "@sycho/flarum-move-posts",
+    "name": "@glowingblue/flarum-move-posts",
     "version": "0.0.0",
     "private": true,
     "prettier": "@flarum/prettier-config",
