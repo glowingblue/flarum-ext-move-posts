@@ -34,13 +34,13 @@ Moved posts are replaced by event posts.
 Install with composer:
 
 ```sh
-composer require sycho/flarum-move-posts:"*"
+composer require glowingblue/move-posts:"*"
 ```
 
 ## Updating
 
 ```sh
-composer update sycho/flarum-move-posts:"*" --with-dependencies
+composer update glowingblue/move-posts:"*" --with-dependencies
 php flarum migrate
 php flarum cache:clear
 ```
