@@ -1,4 +1,4 @@
-name: Frontend
+name: GB Move Posts Frontend
 
 on: [workflow_dispatch, push, pull_request]
 
