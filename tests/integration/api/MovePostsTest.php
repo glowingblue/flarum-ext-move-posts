@@ -17,7 +17,7 @@ class MovePostsTest extends TestCase
     {
         parent::setUp();
 
-        $this->extension('sycho-move-posts');
+        $this->extension('glowingblue-move-posts');
 
         $this->prepareDatabase([
             'users' => [
