@@ -158,15 +158,18 @@ export default class MovePostsModal<T extends MovePostsModalAttrs> extends Modal
         this.isLoading = false;
         if (!emulate) {
           m.redraw();
-          window.location.reload();
           app.modal.close();
 
-          app.alerts.show(
-            {
-              type: 'success',
-            },
-            app.translator.trans('sycho-move-posts.forum.alerts.success')
-          );
+          if (this.targetDiscussionId) {
+            m.route.set(`/d/${this.targetDiscussionId}`);
+          } else {
+            window.location.reload();
+          }
+
+          setTimeout(() => {
+            const alert = app.alerts.show({ type: 'success' }, app.translator.trans('sycho-move-posts.forum.alerts.success'));
+            setTimeout(() => app.alerts.dismiss(alert), 7000);
+          });
         }
 
         return response;
