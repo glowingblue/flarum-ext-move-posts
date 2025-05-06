@@ -13,7 +13,6 @@ namespace GlowingBlue\MovePosts\Command;
 
 use Flarum\Discussion\Discussion;
 use Flarum\Discussion\DiscussionRepository;
-use Flarum\Lock\Event\DiscussionWasLocked;
 use Flarum\Post\CommentPost;
 use Flarum\Post\Post;
 use Flarum\Settings\SettingsRepositoryInterface;
@@ -192,14 +191,6 @@ class MovePostsHandler
         $sourceDiscussion->refreshCommentCount();
         $sourceDiscussion->refreshParticipantCount();
         $sourceDiscussion->refreshLastPost();
-
-        if (isset($sourceDiscussion->is_locked) && $movingFirstPostOnly) {
-            $sourceDiscussion->is_locked = true;
-
-            $this->events->dispatch(
-                new DiscussionWasLocked($sourceDiscussion, $actor)
-            );
-        }
 
         $sourceDiscussion->save();
 
